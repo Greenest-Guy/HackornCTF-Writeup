@@ -76,3 +76,23 @@ for i in message.split(" "):
     print(i[0], end='')
 ```
 
+## mal medium
+### Description
+Can you trace the infection path and identify the C2 domain?
+
+Source: mal_medium.zip
+
+### Solution
+Opening the zip file provided we get 4 files: network.log, pastebin.txt, strings.txt, and vt_reports.json. Within pastebin.txt there are various strings of seeming random numbers and letters. However, paste 9 is much shorter than the rest; inspecting it further we can surmize it is base64. Placing this string of text in a txt file allows us to run ```base64 -d file.txt``` which echos into the terminal flag{domain}. This allows us to easily find the C2 domain and submit the flag.
+
+## dns sluth
+### Description
+A suspicious phishing email claimed to come from support-hackorn.secpen.org - as reported. Goal: Identify the suspicious subdomain that briefly existed.
+
+Link : dns_sluth.zip
+
+Sample: SPL{sone_random_text}
+
+### Solution
+The zip file provided contains 2 files: whois.txt and pdns.csv. whois.txt gives us the domain name ```secpen.org``` and pdns contains a list of subdomains along with other information in the format ```timestamp,subdomain,ip```. Looking through the ipv4 addresses, the first 2 octets all match as expected except for one ipv4 address. This ipv4 comming from a different network and its corrisponding suspicious subdomain, and the solution to this challenge.
+
