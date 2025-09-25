@@ -1,4 +1,4 @@
-# HackornCTF-Writeup
+# HackornCTF 2025 Writeup
 
 ## sanity check
 ### Description
