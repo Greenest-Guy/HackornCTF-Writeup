@@ -127,3 +127,22 @@ Contact Support
 
 ### Solution
 This challenge provides a website which has a textbox to input your email and send a message. Once you input your email you get an email saying ```Hello, BSides Noida is back with 0x03! Check out all the updates at https://bsidesnoida.in , Sometimes, a single comment on a website can reveal everything.``` The website itself and the email addresses arent helpful for finding the flag because its actually hidden within the email itself not the websites. If you download the original message you get a eml file which contains the ```X-CTF-Flag:``` with the flag present in plain text.
+
+## bardeck
+### Description
+Rumors say the bartender hides something valuable behind the counter.
+
+Task: Find the product name hidden in the bar.
+
+Flag Format: SPL{random}
+
+### Solution
+This challenge contains one image with a barcode, and seemingly random code at the bottom. By copying down the value of the barcode and googling it you can quickly find the product referenced in the description. By inputting the product encapsulated in SPL{} you get the flag.
+
+A little easter egg at the bottom is code written in Brainfuck, an esoteric programming language:
+```
+++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>++++++++++++.>---.+..+++++++.+++++++++++.<<++.>--------------.>------------------
+-.+++++++++++++.-----------.++.<<.>>++++++++++.+++++++.-----------------.+++++++++++++.<<.>>++.------------.---.
+<<.>++++++++++++++++.>+++++++++++++.<+++++++++++++.++++++++.>----.
+```
+when compiled it outputs ```Rabbit Dance over the Train```
