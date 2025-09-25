@@ -96,3 +96,25 @@ Sample: SPL{sone_random_text}
 ### Solution
 The zip file provided contains 2 files: whois.txt and pdns.csv. whois.txt gives us the domain name ```secpen.org``` and pdns contains a list of subdomains along with other information in the format ```timestamp,subdomain,ip```. Looking through the ipv4 addresses, the first 2 octets all match as expected except for one ipv4 address. This ipv4 comming from a different network and its corrisponding suspicious subdomain, and the solution to this challenge.
 
+## TrainEnc
+### Description
+A hostile comms channel emitted a fragmented payload before going silent. The payload appears scrambled and contains deliberate noise to confuse analysts. Intelligence believes the adversary used a transposition (or a variation) but added obfuscation so casual brute force won't immediately reveal the plaintext. Recover the hidden flag.
+
+S96fP0226b9L7bcf40{64e5d403d74ad}
+946ac55fa316df5b0671c5495795b23596eb
+
+### Solution
+From the title TrainEnc (likely hinting towards train encryption), and the intelligence information which predicts a transposition cipher was used, this challenge points to a rail-fence cipher. Since we also know this is a fragmented payload we can combine the two strings into one large one ```S96fP0226b9L7bcf40{64e5d403d74ad}946ac55fa316df5b0671c5495795b23596eb```. Lastely if we use the location of S and P to figure out the number of rails (10) we can generate a visual of the rail fence cipher used to encrypt the text.
+
+```
+S                 9                 6                 f              
+ P               0 2               2 6               b 9             
+  L             7   b             c   f             4   0            
+   {           6     4           e     5           d     4           
+    0         3       d         7       4         a       d         }
+     9       4         6       a         c       5         5       f 
+      a     3           1     6           d     f           5     b  
+       0   6             7   1             c   5             4   9   
+        5 7               9 5               b 2               3 5    
+         9                 6                 e                 b
+```
