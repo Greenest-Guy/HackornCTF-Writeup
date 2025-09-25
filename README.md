@@ -157,3 +157,5 @@ Flag Sample: SPL{randomtext}
 
 ### Solution
 The zip file provided contains one wav file which consists of nonsensical sounds which dont replicate a tv buzz as the title may suggest. With further inspection using audacity, switching from Waveform to Spectrogram reveals a hidden message containing the flag.
+
+![image](https://github.com/Greenest-Guy/HackornCTF-Writeup/blob/main/images/Spectrogram.png)
