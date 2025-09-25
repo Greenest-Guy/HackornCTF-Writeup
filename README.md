@@ -146,3 +146,14 @@ A little easter egg at the bottom is code written in Brainfuck, an esoteric prog
 <<.>++++++++++++++++.>+++++++++++++.<+++++++++++++.++++++++.>----.
 ```
 when compiled it outputs ```Rabbit Dance over the Train```
+
+## tv buzz
+### Description
+loves hiding things
+
+Link: file.zip
+
+Flag Sample: SPL{randomtext}
+
+### Solution
+The zip file provided contains one wav file which consists of nonsensical sounds which dont replicate a tv buzz as the title may suggest. With further inspection using audacity, switching from Waveform to Spectrogram reveals a hidden message containing the flag.
