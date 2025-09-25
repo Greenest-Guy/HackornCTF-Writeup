@@ -118,3 +118,12 @@ S                 9                 6                 f
         5 7               9 5               b 2               3 5    
          9                 6                 e                 b
 ```
+
+## mail mist
+### Description 
+The system has sent you a message, but something is not quite right.
+
+Contact Support
+
+### Solution
+This challenge provides a website which has a textbox to input your email and send a message. Once you input your email you get an email saying ```Hello, BSides Noida is back with 0x03! Check out all the updates at https://bsidesnoida.in , Sometimes, a single comment on a website can reveal everything.``` The website itself and the email addresses arent helpful for finding the flag because its actually hidden within the email itself not the websites. If you download the original message you get a eml file which contains the ```X-CTF-Flag:``` with the flag present in plain text.
