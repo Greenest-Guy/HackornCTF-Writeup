@@ -48,3 +48,14 @@ def decrypt(text, key):
 
     return result
 ```
+
+## copy paste
+### Description
+Attackers often test or leak credentials on public paste sites. Can you find the leaked credential?
+
+Link: copy_paste.zip
+
+Sample: SPL{some_random_text}
+
+### Solution
+This challenge provides us with a server log represented in a 1510 line txt file. The file is stored completely in plain text, making it easy to search for the username and password for a now compromised account. Once the password has been found the flag can be created by using the format SPL{username_password}.
