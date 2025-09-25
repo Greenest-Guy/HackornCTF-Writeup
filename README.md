@@ -8,7 +8,7 @@ Update: announcement tab is hiding some secret, reveal to see through. #PlainSig
 
 ### Solution
 
-In the Hackor[n] discord announcements tab there is a hidden flag within the first message sent inside that channel.
+Within the Hackor[n] discord server under the announcements channel, there is a hidden flag within the first message sent, which can be revealed by clicking on it.
 
 ## the easy flag
 ### Description
@@ -20,14 +20,14 @@ Ref: SPL{some_random_text}
 
 ### Solution
 
-Running the Python file given in the challenge prints to the terminal the flag once wrapped in SPL{}
+Running the given Python file prints a message to the terminal, this message once wrapped in SPL{} gives the flag.
 
 ## EncTy
 ### Description
 51 4E 4A 7B 7A 39 32 39 39 64 31 79 30 31 38 35 32 39 36 31 61 7A 79 63 31 31 39 79 30 35 32 63 39 36 79 79 37 35 33 32 38 32 63 31 36 63 31 64 35 79 37 39 61 34 30 35 31 7A 63 30 32 32 30 39 38 38 38 33 7D
 
 ### Solution
-The description consists of a hexidecimal string once decoded returns ```QNJ{z9299d1y01852961azyc119y052c96yy753282c16c1d5y79a4051zc022098883}```. Since we know the flag starts with SPL seeing that this output starts with QNJ, we know the hex values are offset by 2. Using a simple ceasar cipher script can easily shift the flag values from ```z9299d1y01852961azyc119y052c96yy753282c16c1d5y79a4051zc022098883``` to the correct values.
+The description consists of a message in hexidecimal (identifiable by pairs of numbers and letters) once decoded returns an encoded flag. Since we know the flag starts with SPL we can find the Unicode difference, from this difference we can find the offset. Using a simple ceasar cipher python script we can easily shift the flag values by the offset.
 ```
 def decrypt(text, key):
     result = ""
