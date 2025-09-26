@@ -165,7 +165,7 @@ Sample: SPL{sone_random_text}
 2. Open ```pdns.csv``` in VSCode (timestamp,subdomain,ip).
 3. Take note of the first 2 octets that are common between the IPv4 addresses (same network).
 4. Locate the IP with a suspicious IPv4 address (first 2 octets different).
-5. Find the subdomain associated with suspicious IPv4 address using the csv file.
+5. Find the subdomain associated with the suspicious IPv4 address using the CSV file.
 6. Reconstruct the flag using the suspicious subdomain (SPL{subdomain}).
 
 
@@ -213,7 +213,7 @@ Base64 -d file.txt
 1. Copy the hexadecimal message presented in the description.
 2. Create a Python function to decode a hexadecimal string.
 3. Find the shift between the first three letters of the decoded string to SPL (ex. EFG -> ABC = -4)
-4. Use a Python script to decode the message as a Ceasar cipher using the calculated shift.
+4. Use a Python script to decode the message as a Caesar cipher using the calculated shift.
 5. Reconstruct the flag into the format SPL{}.
 
 **Code / Commands / Images**
@@ -224,7 +224,7 @@ def decode_hex(hex):
 ```
 
 ```python
-def decrypt_ceasar(text, key):
+def decrypt_caesar(text, key):
     result = ""
 
     for char in text:
@@ -268,7 +268,7 @@ S96fP0226b9L7bcf40{64e5d403d74ad}
 
 **Code / Commands / Images**
 
-`num_spaces = 2*(num_rails-2) + 1`
+`num_spaces_top = 2*(num_rails-2) + 1`
 
 ```
 S                 9                 x                 f              
@@ -337,7 +337,7 @@ Flag Format: SPL{random}
 -.+++++++++++++.-----------.++.<<.>>++++++++++.+++++++.-----------------.+++++++++++++.<<.>>++.------------.---.
 <<.>++++++++++++++++.>+++++++++++++.<+++++++++++++.++++++++.>----.
 ```
-A hidden Easter egg in this challenge is a Brainfuck program which prints ```Rabbit Dance over the Train``` when compiled!\
+A hidden Easter egg in this challenge is a Brainfuck program which prints ```Rabbit Dance over the Train``` when compiled!
 
 
 
