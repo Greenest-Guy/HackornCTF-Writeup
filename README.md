@@ -11,6 +11,17 @@ $$ |  $$ |$$    $$ |$$       |$$ | $$  |$$    $$/ $$ |      $$ |  $$ |$$    $$/ 
 $$/   $$/  $$$$$$$/  $$$$$$$/ $$/   $$/  $$$$$$/  $$/       $$/   $$/  $$$$$$/     $$/    $$/
 ```
 
+This repository contains my personal solutions for challenges in the HackornCTF Quals 2025 competition. 
+
+**Skills**
+- Cryptography & Cipher Analysis
+- Audio Steganography & Spectrogram Analysis
+- Python Automation & Decoding
+- Kali Linux Command Line tools
+- Digital Forensics
+- Open-Source Intelligence
+
+
 ## sanity check
 **Category:** MISC
 
