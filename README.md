@@ -212,7 +212,7 @@ Base64 -d file.txt
 **Steps to Solve:**  
 1. Copy the hexadecimal message presented in the description.
 2. Create a Python function to decode a hexadecimal string.
-3. Find the shift between the first three letters of the decoded string to SPL (ex. EFG -> ABC = -4)
+3. Find the shift between the first three letters of the decoded string to SPL (e.g. EFG -> ABC = -4)
 4. Use a Python script to decode the message as a Caesar cipher using the calculated shift.
 5. Reconstruct the flag into the format SPL{}.
 
@@ -295,7 +295,7 @@ Sigurd Petter Ludvig { Sexa Trea Nolla Caesar Tvåa Filip Ett Caesar Nolla Erik 
 
 **Steps to Solve:**  
 1. Copy the description into VSCode.
-2. Translate Swedish words into their corresponding numbers (ex. Åtta -> 8)
+2. Translate Swedish words into their corresponding numbers (e.g. Åtta -> 8)
 3. Create a Python script to take the first letter from each word and concatenate them into one string, thus reconstructing the flag.
 
 **Code / Commands / Images**
