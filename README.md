@@ -11,7 +11,7 @@ $$ |  $$ |$$    $$ |$$       |$$ | $$  |$$    $$/ $$ |      $$ |  $$ |$$    $$/ 
 $$/   $$/  $$$$$$$/  $$$$$$$/ $$/   $$/  $$$$$$/  $$/       $$/   $$/  $$$$$$/     $$/    $$/
 ```
 
-This repository contains my personal solutions for challenges in the HackornCTF Quals 2025 competition. 
+This repository contains my personal solutions for challenges in the [HackornCTF Quals 2025 competition](https://ctftime.org/event/2919). 
 
 **Skills**
 - Cryptography & Cipher Analysis
